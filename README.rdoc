@@ -1,28 +1,7 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+How to get started:
+Step 1: install rails and postgres onto your machine
+Step 2: inside of this directory, run bundle install
+Step 3: Run rake db:create
+Step 4: Run rake db:migrate
+Step 5: Run rails s
+Step 6: check at the url localhost:3000 to see if its up!
