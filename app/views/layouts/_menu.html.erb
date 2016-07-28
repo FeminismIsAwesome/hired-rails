@@ -1,0 +1,10 @@
+<ul id="menu" class="list-group col-xs-9" style="display:none;">
+  <% ApplicationHelper.get_menuitems.each do |item| %>
+    <li class="list-group-item">
+      <a href="#{item[:url]}">
+        <%= item[:title] %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+

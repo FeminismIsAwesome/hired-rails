@@ -1,0 +1,54 @@
+<%= javascript_include_tag "jobs" %>
+
+<div class="row">
+  <%= render 'layouts/menu_button' %>
+</div>
+<div class="row">
+  <%= render "layouts/menu" %>
+</div>
+<div class="selected_job">
+  <div class="selected_job_title">
+    <h2>
+      <%= @job[:title] %>
+    </h2>
+      <span class="glyphicon glyphicon-heart-empty">
+      </span>
+  </div>
+  <div class="job_location">
+    <div>
+      <%= @job[:location] %>
+    </div>
+  </div>
+  <div class="job_description">
+    <h3>
+      Pay: $<%= @job[:pay] %>
+    </h3>
+            <span>
+              per hour
+            </span>
+    <h3>
+      Job Description
+    </h3>
+    <div>
+      <%= simple_format(@job[:description]) %>
+    </div>
+  </div>
+  <div class="job_candidate">
+    <h3> Candidate </h3>
+    <span> <%= @job[:qualification] %> </span>
+  </div>
+  <video>
+    <div class="icon">
+      <iframe width="420" height="315" src='<%= @job[:training] || "https://www.youtube.com/embed/L_hX_D_ssgE" %>'>
+
+      </iframe>
+    </div>
+  </video>
+  <div class="apply">
+    <a href="/job/<%= @jobid %>/apply">
+      <button class="btn btn-lg btn-primary">
+        Apply
+      </button>
+    </a>
+  </div>
+</div>

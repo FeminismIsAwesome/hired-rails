@@ -1,0 +1,89 @@
+// Place all the styles related to the jobs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  max-width: 640px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selected_job_title {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #337ab7;
+}
+.selected_job h2, .job h2 {
+  display: inline;
+  width: auto;
+}
+
+
+.selected_job_title .glyphicon {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 46px;
+  cursor: pointer;
+}
+
+.blue-heart {
+  color: blue;
+}
+
+.selected_job img, .job img {
+  width: 32px;
+  height: 32px;
+  float: right;
+}
+
+.job_location {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+span.pay {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#jobs {
+  list-style-type: none;
+}
+
+.job {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.jobs li {
+  border: 1px;
+}
+
+.apply {
+  margin-top: 10px;
+}
+
+.apply button {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.video {
+  margin: 20px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.video img {
+  width: 70px;
+  height: auto;
+  float: none;
+  margin-left: 20px;
+}

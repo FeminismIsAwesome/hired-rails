@@ -1,0 +1,29 @@
+<div class="row">
+  <%= render 'layouts/menu_button' %>
+</div>
+<div class="row">
+  <%= render "layouts/menu" %>
+</div>
+  <ul id="jobs" class="list-group col-xs-11">
+    <% @jobs.each_with_index do |job,index| %>
+      <li class="row list-group-item">
+        <div class="col-xs-10">
+          <a href='<%= job_path(index) %>'>
+            <h2>
+              <%= job[:title] %>
+            </h2>
+          </a>
+        </div>
+        <div class="col-xs-2">
+          <p>
+            <%= job[:pay] %>
+          </p>
+          <% if job[:favorite] %>
+            <i class="glyphicon glyphicon-heart"> </i>
+          <% else %>
+            <i class="glyphicon glyphicon-heart-empty heart"> </i>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
